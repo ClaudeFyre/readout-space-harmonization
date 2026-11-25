@@ -1,0 +1,62 @@
+{
+  "script": "make_figures_jmi.py",
+  "text_width_in": 6.5,
+  "figures": [
+    {
+      "figure": "fig_design",
+      "width_in": 6.5,
+      "height_in": 3.35,
+      "vector": "fig_design.pdf",
+      "raster": "fig_design.png",
+      "data": "schematic with geometric L2-sphere rotation diagram; counts 100 dev / 200 test (2 x 100 pairs), 3 vendors",
+      "n": null,
+      "sources_sha256_16": {
+        "manifests/scaleup_v2_20261030/confirmation_protocol.json": "4b6f5c7972b703b6",
+        "results/p2_20261121/multivendor_eval.json": "23f20cfff541a252"
+      },
+      "created": "2026-11-25"
+    },
+    {
+      "figure": "fig_phase",
+      "width_in": 6.5,
+      "height_in": 2.38,
+      "vector": "fig_phase.pdf",
+      "raster": "fig_phase.png",
+      "data": "mean (line) and interquartile range across patients (band) for the \\lambda path; panel A: identity, slope-only (\\lambda=0), PC-OLS (\\lambda=1) and full mixing",
+      "n": 200,
+      "sources_sha256_16": {
+        "results/p1_20261119/e3_arrays.npz": "0ec77b14abfe7dc2",
+        "results/p1_20261119/e4_post_vq_arrays.npz": "5a7e344c0ec00e93"
+      },
+      "created": "2026-11-25"
+    },
+    {
+      "figure": "fig_patient_level",
+      "width_in": 6.5,
+      "height_in": 2.38,
+      "vector": "fig_patient_level.pdf",
+      "raster": "fig_patient_level.png",
+      "data": "per-patient pairs (n=200): token MSE and direction error at \\lambda=0 (slope only) vs \\lambda=1 (PC-OLS), and the per-patient change in token MSE caused by adding the offset",
+      "n": 200,
+      "sources_sha256_16": {
+        "results/p1_20261119/e3_arrays.npz": "0ec77b14abfe7dc2"
+      },
+      "created": "2026-11-25"
+    },
+    {
+      "figure": "fig_vendor_operating",
+      "width_in": 6.5,
+      "height_in": 2.82,
+      "vector": "fig_vendor_operating.pdf",
+      "raster": "fig_vendor_operating.png",
+      "data": "macro AUROC per vendor with bootstrap CI and the out-of-fold/in-sample source bracket; fixed-threshold sensitivity and implied specificity per vendor",
+      "n": 128,
+      "sources_sha256_16": {
+        "results/p2_20261121/multivendor_eval.json": "23f20cfff541a252",
+        "results/p2_20261121/source_cv.json": "bfeac525d2ebc0b6",
+        "results/p2_20261121/clinical_utility.json": "2fa01ca48efd83a1"
+      },
+      "created": "2026-11-25"
+    }
+  ]
+}
