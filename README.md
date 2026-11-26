@@ -10,10 +10,11 @@ The paper asks a narrow question: for a *frozen* CT readout, which components of
 ## Contents
 
 ```
-figures/            plotting code and aggregate data for Figures 1-4
+figures/            plotting code and numerical data for Figures 1-4
   extracted_figure_data.json   aggregate quantities plotted in Figures 2-4
   make_figures_jmi.py          regenerates all four figures
   figure_manifest.json         figure sizes, formats and input digests
+JMI_Supplementary_Data.xlsx    the same numbers as supplied with the submission, one sheet per figure or table
 ```
 
 Run `python3 figures/make_figures_jmi.py` (needs `numpy`, `scipy`, `matplotlib`; no GPU; a few seconds). Outputs are written next to the script.
