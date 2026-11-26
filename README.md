@@ -30,7 +30,7 @@ The CT-CLIP checkpoint is likewise obtained from the provider. The cohort used i
 
 ## Status
 
-This repository currently carries the figure-level code and aggregate data. The full analysis pipeline — token extraction and patch-centre mapping, fitting of the correction families, the decomposition and its numerical verification, the null-space construction, the paired bootstrap and calibration analyses — is being prepared for release here. Until then it is available from the corresponding author on reasonable request.
+This repository carries the figure-generation code and the numerical outputs behind Figures 1-4, which are sufficient to regenerate every figure and to check the cohort summaries tabulated in the paper. The correction-fitting, null-space and bootstrap routines are part of the same analysis codebase and are being prepared for release here; they are not included in this version, and the paper's code statement describes only what is released.
 
 ## Citation
 
